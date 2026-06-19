@@ -17,8 +17,6 @@ Este repositório mostra uma implementação de IA para atendimento de vendas em
 - fluxo CLI em `src/copiloto.py`
 - base de conhecimento em `knowledge/`
 
-É ideal para portfólio porque une conteúdo real de mercado a um agente simples de suporte ao vendedor.
-
 ## Para quem é?
 
 Pessoas vendedoras, atendentes, equipes comerciais e qualquer projeto que deseje usar IA para:
