@@ -1,7 +1,7 @@
-# Resumo Compacto da Transcrição — FIZZ (Heineken)
+# Resumo Compacto da Transcrição — FYS (Heineken)
 
-## Sobre a FIZZ
-- FIZZ é o refrigerante do Grupo Heineken.
+## Sobre a FYS
+- FYS é o refrigerante do Grupo Heineken.
 - Lançado em 2019 e relançado em 2021 com nova proposta.
 - Foco em tendências de consumo:
   - 50% menos açúcar que a média do mercado.
@@ -27,7 +27,7 @@
 - Consumidores buscam menos açúcar (48%).
 - Segmento zero é o que mais cresce.
 - Crescimento do consumo individual (latas).
-- FIZZ está alinhada a essas tendências.
+- FYS está alinhada a essas tendências.
 
 ## Posicionamento da Marca
 - Comunicação baseada em humor, leveza e autoironia.
@@ -43,14 +43,14 @@
 ## Desafio Real do Negócio (para o Bootcamp)
 
 ### Problema
-A Heineken tem baixa presença de FIZZ em padarias, apesar de ser um canal extremamente relevante para refrigerantes.
+A Heineken tem baixa presença de FYS em padarias, apesar de ser um canal extremamente relevante para refrigerantes.
 
 ### Dados importantes
 - 72 mil padarias no Brasil.
 - 15 mil só em São Paulo.
 - 21% das padarias do país estão na Grande SP.
 - Mercado total de refrigerantes single serve sem cola: ~246 mil hectolitros.
-- FIZZ representa apenas 0,9% desse mercado.
+- FYS representa apenas 0,9% desse mercado.
 
 ### Causa
 Vendedores priorizam cerveja, não refrigerante.  
@@ -62,10 +62,10 @@ Criar uma solução de IA que:
 2. Priorize quais devem ser visitadas/ativadas.
 3. Ative esses pontos sem depender tanto da força de vendas humana.
 
-Objetivo: aumentar a presença de FIZZ em padarias usando IA.
+Objetivo: aumentar a presença de FYS em padarias usando IA.
 
 ## Insights adicionais
-- Muitas pessoas não sabem que FIZZ é do Grupo Heineken.
+- Muitas pessoas não sabem que FYS é do Grupo Heineken.
 - A marca quer aumentar awareness e distribuição.
 - A comunicação deve ser leve, divertida e autêntica.
 - O Bootcamp terá outra live técnica para construir o agente de IA.
