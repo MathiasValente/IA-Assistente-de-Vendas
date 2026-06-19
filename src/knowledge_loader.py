@@ -1,23 +1,44 @@
 import os
 
+
 def load_knowledge():
     base_dir = os.path.join(os.getcwd(), "knowledge")
 
-    files = [
-        "transcricao-live-fys.txt",
-        "produtos.md",
-        "perguntas-frequentes.md",
-        "objecoes.md",
-        "contexto-do-negocio.md"
+    # Preferência de ordem quando possível
+    preferred = [
+        "transcricao-live-fys",
+        "produtos",
+        "perguntas-frequentes",
+        "objecoes",
+        "contexto-do-negocio",
     ]
+
+    files = []
+
+    # Tenta encontrar arquivos preferidos com .md ou .txt
+    for name in preferred:
+        for ext in (".md", ".txt"):
+            p = os.path.join(base_dir, name + ext)
+            if os.path.exists(p):
+                files.append(os.path.basename(p))
+                break
+
+    # Adiciona quaisquer outros .md/.txt presentes, mantendo ordem
+    if os.path.isdir(base_dir):
+        for f in sorted(os.listdir(base_dir)):
+            if f.endswith((".md", ".txt")) and f not in files:
+                files.append(f)
 
     knowledge = ""
 
     for file in files:
         path = os.path.join(base_dir, file)
-        if os.path.exists(path):
-            with open(path, "r", encoding="utf-8") as f:
-                content = f.read()
+        try:
+            with open(path, "r", encoding="utf-8") as fh:
+                content = fh.read()
                 knowledge += f"\n\n### ARQUIVO: {file}\n{content}"
+        except Exception:
+            # Ignora arquivos que não possam ser lidos
+            continue
 
     return knowledge
